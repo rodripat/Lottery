@@ -16,6 +16,9 @@ class Lottery:
                 count += 1
         return self.winner_numbers
 
+    def calculate_powerball_number(self):
+        return random.randrange(1,26)
+
     def show_numbers(self):
         self.winner_numbers.sort()
         for number in self.winner_numbers:
